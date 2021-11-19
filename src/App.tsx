@@ -1,9 +1,9 @@
-import { AppContainer } from "./styles"
-import { Column } from "./Column"
-import { Card } from "./Card"
+import { AppContainer } from "./styles";
+import { Column } from "./Column";
+import { Card } from "./Card";
+import { AddNewItem } from "./AddNewItem";
 
-
-export const App = ()=> {
+export const App = () => {
   return (
     <AppContainer>
       <Column text="To Do">
@@ -15,6 +15,7 @@ export const App = ()=> {
       <Column text="Done">
         <Card text="Begin to use static typing" />
       </Column>
+      <AddNewItem toggleButtonText="+ Add another list" onAdd={console.log} />
     </AppContainer>
-  )  
-}
+  );
+};
